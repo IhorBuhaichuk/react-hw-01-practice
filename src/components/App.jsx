@@ -1,6 +1,7 @@
 // src/components/App.jsx
 
 import { Product } from "./Product";
+import {BookList, favouriteBooks} from "./FavouriteBooks";
 
 export default function App() {
   return (
@@ -17,6 +18,9 @@ export default function App() {
         imgUrl="https://d9hyo6bif16lx.cloudfront.net/live/img/production/detail/menu/lunch-dinner_999-combohs_all-american-burger-fries.jpg"
         price={14.29}
       />
+      
+        <h1>Books of the week</h1>
+        <BookList books={favouriteBooks} />
     </div>
   );
 }
