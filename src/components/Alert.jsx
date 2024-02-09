@@ -1,20 +1,11 @@
-import "./Alert.css";
+import css from "./Alert.module.css";
 import clsx from "clsx";
   
-  export const Alert = ({ variant, outlined, elevated, children }) => {
-    return (
-      <p
-        className={clsx("alert", variant, {
-          "is-outlined": outlined,
-          "is-elevated": elevated,
-        })}
-      >
-        {children}
-      </p>
-    );
-  };
-  
-  
+  export const Alert = ({ variant, children }) => {
+  return <p className={clsx(css.alert, css[variant])}>{children}</p>;
+};
+
+
 
 
 //   Для обчислення фінального значення атрибуту className можна було використати блок if...else, 
