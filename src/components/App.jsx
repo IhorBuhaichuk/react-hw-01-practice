@@ -3,7 +3,7 @@
 import { Product } from "./Product";
 import {BookList, favouriteBooks} from "./FavouriteBooks";
 import {Alert} from "./Alert";
-import {Button} from "./Button";
+import { TiWiFi } from "react-icons/ti";
 
 export default function App() {
   return (
@@ -37,7 +37,7 @@ export default function App() {
         Please update your profile contact information
       </Alert>
 
-
+      <TiWiFi className="wifi-logo" size="36"/>
       
     </div>
   );
